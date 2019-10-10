@@ -1,0 +1,111 @@
+/*--------COLORES-------*/
+
+$white: #ffffff;
+$gray-1: #e2e2e2;
+$gray-2: #b9b8b7;
+$gray-3: hsl(40, 1%, 55%);
+$gray-4: #666462;
+$gray-5: #4b4948;
+$gray-6: #2f2e2d;
+$primary-1: #ffce32;
+$primary-2: #f9a519;
+$primary-3: #f09000;
+$secondary-1: #46c9ec;
+$secondary-2: #01b5e6;
+$secondary-3: #0184a8;
+$transparency-1: #b9b8b7 70%;
+$transparency-2: rgba(47,46,45,0.85);
+$valid: #27ae60;
+$danger: #eb5757;
+
+/*---------------TIPOGRAFIAS--------------*/
+
+.desktopHeading-1,
+.desktopHeading-2,
+.desktopHeading-3,
+.desktopHeading-4 {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+
+}
+
+
+.desktopHeading-1 {
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.desktopHeading-2 {
+    font-size: 39px;
+    line-height: 47px;
+}
+
+.desktopHeading-3 {
+    font-size: 31px;
+    line-height: 40px;
+}
+
+.desktopHeading-4 {
+    font-size: 25px;
+    line-height: 32px;
+}
+
+.mobileHeading-2,
+.mobileHeading-3,
+.mobileHeading-4 {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+
+}
+
+.mobileHeading-2{
+    font-size: 29px;
+    line-height: 34px;
+}
+
+.mobileHeading-3{
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.mobileHeading-4{
+    font-size: 21px;
+    line-height: 24px;
+}
+
+.textLargeBold,
+.text,
+.textSmallBold {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+}
+
+.textLarge,
+.textSmall {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 400;
+}
+
+.textLarge,
+.textLargeBold {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.textSmall,
+.textSmallBold {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.text {
+    font-size: 16px;
+}
+
+/*-----BREAKPOINTS----*/
+
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;

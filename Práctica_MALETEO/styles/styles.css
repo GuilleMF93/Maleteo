@@ -1,0 +1,607 @@
+@charset "UTF-8";
+/*--------COLORES-------*/
+/*---------------TIPOGRAFIAS--------------*/
+.desktopHeading-1,
+.desktopHeading-2,
+.desktopHeading-3,
+.desktopHeading-4 {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 500;
+}
+
+.desktopHeading-1 {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.desktopHeading-2 {
+  font-size: 39px;
+  line-height: 47px;
+}
+
+.desktopHeading-3 {
+  font-size: 31px;
+  line-height: 40px;
+}
+
+.desktopHeading-4 {
+  font-size: 25px;
+  line-height: 32px;
+}
+
+.mobileHeading-2,
+.mobileHeading-3,
+.mobileHeading-4 {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 500;
+}
+
+.mobileHeading-2 {
+  font-size: 29px;
+  line-height: 34px;
+}
+
+.mobileHeading-3 {
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.mobileHeading-4 {
+  font-size: 21px;
+  line-height: 24px;
+}
+
+.textLargeBold,
+.text,
+.textSmallBold {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 500;
+}
+
+.textLarge,
+.textSmall {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 400;
+}
+
+.textLarge,
+.textLargeBold {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.textSmall,
+.textSmallBold {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.text {
+  font-size: 16px;
+}
+
+/*-----BREAKPOINTS----*/
+img {
+  max-width: 85%;
+}
+
+@media (min-width: 576px) {
+  img {
+    max-width: 100%;
+  }
+}
+
+.dondeLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo {
+  width: 50%;
+  padding: 37px 0;
+}
+
+@media (min-width: 576px) {
+  .logo {
+    width: 20%;
+  }
+}
+
+/*------------LO DE LAS MALETAS--------*/
+.maletas {
+  width: auto;
+  margin: 0 -40px 3em;
+  background-image: url(../assets/jumbo@2x.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
+@media (min-width: 576px) {
+  .maletas {
+    background-position: 0;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 3em;
+  }
+}
+
+.cuadradoNegro {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(47, 46, 45, 0.85);
+  padding: 40px 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 576px) {
+  .cuadradoNegro {
+    width: 40%;
+    padding: 5em 40px;
+  }
+}
+
+.ganaDinero {
+  color: white;
+  width: 60%;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.botones {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/*------------EMPIEZA EL BODY------*/
+body {
+  max-width: 576px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 576px) {
+  body {
+    max-width: 100%;
+    display: block;
+    margin: 0 5%;
+  }
+}
+
+.todo {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .todo {
+    width: 1250px;
+    max-width: 100%;
+  }
+}
+
+/*---------------CÓMO FUNCIONA--------------*/
+.comoFunca {
+  color: #2f2e2d;
+  margin-top: 0.25em;
+}
+
+@media (min-width: 576px) {
+  .comoFunca {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 576px) {
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 576px) {
+  li {
+    width: 30%;
+  }
+}
+
+.cardFunciona {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2em 0;
+}
+
+@media (min-width: 576px) {
+  .cardFunciona {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+}
+
+.numero {
+  color: white;
+  margin: auto;
+  padding: 0;
+}
+
+.circulo {
+  background: #f09000;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f9a519), to(#ffce32));
+  background: linear-gradient(0deg, #f9a519, #ffce32 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 576px) {
+  .circulo {
+    margin: 0 auto;
+    margin-bottom: 0.25em;
+  }
+}
+
+.textoCard {
+  width: 85%;
+  color: #2f2e2d;
+  margin-left: 1em;
+}
+
+@media (min-width: 576px) {
+  .textoCard {
+    text-align: center;
+    margin: 0.5em auto;
+  }
+}
+
+.cardTitulo {
+  color: #2f2e2d;
+  margin-bottom: 0.25em;
+}
+
+@media (min-width: 576px) {
+  .cardTitulo {
+    text-align: center;
+  }
+}
+
+.pCard {
+  color: #4b4948;
+}
+
+@media (min-width: 576px) {
+  .pCard {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+/*-------------------FORMULARIO----------------*/
+@media (min-width: 576px) {
+  .futuroFormulario {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 4em 0;
+  }
+}
+
+.trueFormulario {
+  border: solid 1px #e2e2e2;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+@media (min-width: 576px) {
+  .trueFormulario {
+    width: 40%;
+  }
+}
+
+.eliminableClicked {
+  display: none;
+}
+
+.validadoClicked {
+  display: block;
+  border: solid 1px #f9a519;
+  background-color: #f9a519;
+  padding: 30px;
+}
+
+@media (min-width: 576px) {
+  .validadoClicked {
+    width: 40%;
+  }
+}
+
+.cuadradoValidado {
+  display: none;
+}
+
+.validGracias {
+  color: #ffffff;
+}
+
+.validTexto {
+  color: #ffffff;
+  margin-top: 1em;
+}
+
+.mockupSection {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .mockupSection {
+    display: block;
+    width: 40%;
+  }
+}
+
+.demo {
+  color: #2f2e2d;
+}
+
+.nombre, .horario, .email, .ciudad {
+  color: #4b4948;
+  margin: 1em 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+label {
+  display: block;
+  margin: 0.2em 0;
+}
+
+.campoTexto {
+  border: 2px solid #e2e2e2;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 0.35em 0.5em;
+  outline: none;
+  color: #666462;
+}
+
+*::-webkit-input-placeholder {
+  color: #b9b8b7;
+}
+
+*:-ms-input-placeholder {
+  color: #b9b8b7;
+}
+
+*::-ms-input-placeholder {
+  color: #b9b8b7;
+}
+
+*::placeholder {
+  color: #b9b8b7;
+}
+
+select {
+  width: 100%;
+  border: 2px solid #e2e2e2;
+  background-color: #ffffff;
+  outline: none;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+}
+
+option {
+  color: #2f2e2d;
+}
+
+.botonContainer {
+  margin: 1em 0 0;
+}
+
+.boton:visited, .boton {
+  background-color: #f9a519;
+  color: #ffffff;
+  border-radius: 5px;
+  border: 0.05em solid #f9a519;
+  padding: 0.7em 1.7em;
+}
+
+.boton:hover, .boton:active {
+  background-color: #ffffff;
+  color: #f9a519;
+  border-radius: 5px;
+  border: 0.05em solid #f9a519;
+  padding: 0.7em 1.7em;
+}
+
+.terminosContainer {
+  color: #4b4948;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.checkboxText {
+  margin-left: 1em;
+}
+
+#checkbox {
+  height: 25px;
+  width: 25px;
+}
+
+/*----------------OPINIONES------------*/
+.extra {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .extra {
+    display: block;
+  }
+}
+
+.opiniones {
+  margin: 1em 0;
+}
+
+@media (min-width: 576px) {
+  .opiniones {
+    margin: 3em 0 2em;
+  }
+}
+
+@media (min-width: 576px) {
+  .opinionesCuadros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.opinionesGuardianes {
+  color: #2f2e2d;
+  margin: 1em 0 0;
+}
+
+@media (min-width: 576px) {
+  .opinionesGuardianes {
+    text-align: center;
+    display: block;
+    margin-bottom: 1em;
+  }
+}
+
+.opinion {
+  margin: 1em 0;
+}
+
+@media (min-width: 576px) {
+  .opinion {
+    width: 31%;
+  }
+}
+
+.opinionP {
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  padding: 1em;
+  color: #666462;
+}
+
+.nombreOpinion {
+  color: #4b4948;
+  margin: 0.5em 0 0;
+}
+
+@media (min-width: 576px) {
+  .nombreOpinion {
+    margin-top: 1em;
+  }
+}
+
+.direccionOpinion {
+  color: #666462;
+  margin: 0.25em 0 2em;
+}
+
+/*---Lo de las flechas---*/
+.laCaja {
+  position: relative;
+}
+
+.arrow-down-white {
+  bottom: -9px;
+  left: 10px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ffffff;
+}
+
+.arrow-down-gray {
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #e2e2e2;
+}
+
+/*------------LO DEL MAPA------------*/
+.guardianesCerca {
+  color: #2f2e2d;
+  margin: 1em 0 0.5em;
+}
+
+@media (min-width: 576px) {
+  .guardianesCerca {
+    text-align: center;
+  }
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  background-color: grey;
+  margin-bottom: 100px;
+}
+
+@media (min-width: 576px) {
+  #map {
+    height: 500px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

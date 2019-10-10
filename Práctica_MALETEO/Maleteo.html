@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maleteo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="styles/styles.css"><!--------------LO HE QUITADO MIENTRAS HAGO EL HTML--->
+    <link rel="stylesheet" href="styles/variables.css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:400,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/934851435d.js" crossorigin="anonymous"></script>
+</head>
+
+<!------------------------------------------HEADER---------------------------------------------------------------->
+<body>
+
+<header>
+    <section class="dondeLogo">
+        <img src="assets/logo.svg" alt="logo_maleteo" class="logo" width="1000px">   <!--Dudo si es un icono al que se le da tamaño con alguno de los predefinidos-->
+    </section>
+    <article class="maletas">
+        <div class="cuadradoNegro">
+            <!--<img src="assets/jumbo@2x.jpg" alt="maletas.png">-->
+            <h1 class="ganaDinero mobileHeading-2">Gana dinero guardando equipaje a viajeros como tu</h1>
+            <div class="botones">
+                <div class="botonAppStore">
+                    <a href="#"><img src="assets/app-store.svg" alt="boton_appstore"></a>
+                </div>
+                <div class="botonGooglePlay">
+                    <a href="#"><img src="assets/google-play.svg" alt="boton_appstore"></a>
+                </div>
+            </div>
+        </div>
+    </article>
+</header>
+
+<div class="todo">
+    
+<!---------------------------LO DE LOS TRES PASOS CON SUS CIRCULICOS Y TAL--------------------------->
+
+    <article class="comoFunciona">
+        <h1 class="comoFunca mobileHeading-2">¿Cómo funciona?</h1>
+        <ul>
+            <li>
+                <article class="cardFunciona">
+                    <div class="circulo">
+                        <p class="numero mobileHeading-2">1</p>
+                    </div>
+                    <div class="textoCard">
+                        <h2 class="mobileHeading-2 cardTitulo">Date de alta</h2>
+                        <p class="pCard textLarge">Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados.</p>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="cardFunciona">
+                    <div class="circulo mobileHeading-2">
+                        <h2 class="numero">2</h2>
+                    </div>
+                    <div class="textoCard">
+                        <h2 class="mobileHeading-2 cardTitulo">Publica tus espacios, horarios y tarifas</h2>
+                        <p class="pCard textLarge">No ha mucho tiempo que vivía un hidalgo de los de lanza en astillero.</p>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="cardFunciona">
+                    <div class="circulo mobileHeading-2">
+                        <h2 class="numero">3</h2>
+                    </div>
+                    <div class="textoCard">
+                        <h2 class="mobileHeading-2 cardTitulo">Recibe viajeros y gana dinero</h2>
+                        <p class="pCard textLarge">En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo.</p>
+                    </div>
+                </article>
+            </li>
+        </ul>
+    </article>
+
+<!------------------------------------------FORMULARIO--------------------------------------------->
+
+    <section class="futuroFormulario">
+
+        <section class="mockupSection">
+            <img class="mockup" src="assets/iPhoneX@2x.png" alt="movil">
+        </section>
+
+        <section class="cuadradoValidado" id="validado">
+            <h1 class="mobileHeading-2 validGracias">¡Gracias!</h1>
+            <p class="textLarge validTexto">Tu formulario ha sideo enviado correctamente, pronto serás un guardián de Maleteo</p>
+        </section>
+
+    <section class="trueFormulario" id="eliminarAlClickar">
+        <form id="enviarFormulario" method="POST" action="https://httpbin.org/post">
+        <h1 class="demo mobileHeading-2">Solicita una demo</h1>
+       <div class="nombre">
+           <label for="nombre" class="textLarge">Nombre</label>
+           <input class="textLarge campoTexto" type="text" name="nombre" id="nombre" placeholder="Vincent Chase">
+       </div>
+       <div class="email">
+            <label for="email" class="textLarge">Email</label>
+            <input class="textLarge campoTexto" type="text" name="email" id="email" placeholder="vincent@mga.com">
+        </div>
+        <div class="horario">
+            <label for="horario" class="textLarge">Horario preferido</label>
+            <input class="textLarge campoTexto" type="text" name="horario" id="horario" placeholder="vincent@mga.com">
+        </div>
+        <div class="ciudad">
+            <label for="ciudad" class="textLarge">Ciudad</label>
+            <select class="ciudadSelect textLarge campoTexto" id="cityOptions" name="ciudad">
+                <option class="text campoTexto" value="madrid">Madrid</option>
+                <option class="text campoTexto" value="lisboa">Lisboa</option>
+                <option class="text campoTexto" value="paris">Paris</option>
+                <option class="text campoTexto" value="londres">Londres</option>
+                <option class="text campoTexto" value="roma">Roma</option>
+                <option class="text campoTexto" value="bruselas">Bruselas</option>
+                <option class="text campoTexto" value="berlin">Berlin</option>
+                <option class="text campoTexto" value="gdansk">Gdansk</option>
+            </select>
+        </div>
+        <div class="terminosContainer textLarge">
+            <input type="checkbox" name="terms" id="checkbox" class="terminos" required>
+            <label for="checkbox" class="checkboxText"> He leído y acepto la política de privacidad</label>
+        </div>
+        <div class="enviar botonContainer" id="botonEnviar">
+            <input type="submit" value="Enviar" class="boton mobileHeading-4">
+        </div>
+    </form>
+            </section>
+        </section>    
+
+<!--------------------------------------------OPINIONES-------------------------------------------->
+
+    <section class="opiniones">
+        <h1 class="opinionesGuardianes desktopHeading-3">Opiniones de otros guardianes</h1>
+        
+        <section class="opinionesCuadros">
+            <article class="opinion">
+                <div class="laCaja">
+                    <p class="opinionP textLarge">Tras el enorme éxito internacional de su primera colaboración, "Bailar", que ganó un galardón en los Premios</p>
+                    <div class="arrow-down-gray"></div>
+                    <div class="arrow-down-white"></div>
+                </div>
+                <div class="nombreOpinion">
+                    <h2 class="textLargeBold nombreOpinion">Sergio Garnacho</h2>
+                    <p class="text direccionOpinion">Tetuán, Madrid</p>
+                </div>
+            </article>
+
+            <article class="opinion">
+                <div class="laCaja">
+                        <p class="opinionP textLarge">Tras el enorme éxito internacional de su primera colaboración, "Bailar", que ganó un galardón en los Premios</p>
+                        <div class="arrow-down-gray"></div>
+                        <div class="arrow-down-white"></div>
+                    </div><div class="nombreOpinion">
+                    <h2 class="textLargeBold nombreOpinion">Sergio Garnacho</h2>
+                    <p class="text direccionOpinion">Tetuán, Madrid</p>
+                </div>
+            </article>
+
+
+            <article class="opinion extra">
+                <div class="laCaja">
+                        <p class="opinionP textLarge">Tras el enorme éxito internacional de su primera colaboración, "Bailar", que ganó un galardón en los Premios</p>
+                        <div class="arrow-down-gray"></div>
+                        <div class="arrow-down-white"></div>
+                    </div><div class="nombreOpinion">
+                    <h2 class="textLargeBold nombreOpinion">Sergio Garnacho</h2>
+                    <p class="text direccionOpinion">Tetuán, Madrid</p>
+                </div>
+            </article>
+        </section>    
+    </section>
+
+<!-------------------------------------------LO DEL MAPA----------------------------------------->
+
+    <section class="mapa">
+        <h1 class="guardianesCerca desktopHeading-3">Guardianes cerca de ti</h1>
+        <div id="map"></div>
+    </section>
+
+
+<!---------------------------------------------SCRIPTS------------------------------------------->
+
+    </div>
+
+    <script src="scripts/scripts.js" type="application/javascript"></script>
+    
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMq55J4NHJ1dzOtMOgYKVgYWN3g4WD4A4&callback=initMap">
+    </script><!--Tengo que cambiar-------------------YOUR_API_KEY-----por la key que me genere yo para que esto funcione---->
+
+</body>
+
+
+ 

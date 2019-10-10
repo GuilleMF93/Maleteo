@@ -1,0 +1,535 @@
+@import 'variables';
+
+img {
+    max-width: 85%;
+    //display: block;
+
+    @media (min-width: $sm){
+        max-width: 100%;
+    }
+}
+
+.dondeLogo {
+    //background-color: $white;
+    display: flex;
+    //background-color: lightgreen;
+    
+    @media (min-width: $sm) {
+    }
+
+}
+
+.logo{
+    //display: block;
+    width: 50%;
+    padding: 37px 0;
+    //background-color: lightblue;
+    
+    @media (min-width: $sm) {
+        width: 20%;
+    }
+}
+
+/*------------LO DE LAS MALETAS--------*/
+
+.maletas{
+    width: auto;
+    //background-color: purple;
+    margin:0 -40px 3em;
+    //display: flex;
+    background-image: url(../assets/jumbo@2x.jpg);
+    background-size: cover;
+    background-position: 50%;
+
+    @media (min-width: $sm) {
+        background-position: 0;
+        width: 100%;
+        margin:0;
+        margin-bottom: 3em;
+    }
+}
+
+.cuadradoNegro{
+    width: auto;
+    display: flex;
+    background-color: $transparency-2;
+    padding: 40px 40px;
+    flex-direction: column;
+    
+    @media (min-width: $sm) {
+        width:40%;
+        padding: 5em 40px;
+    }
+}
+
+.ganaDinero{
+    color: white;
+    //background-color: darkolivegreen;
+    width: 60%;
+    display: block;
+    margin-bottom: 1em;
+
+    @media (min-width: $sm) {
+    }
+}
+
+.botones{
+    //ackground-color: lightsalmon;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    @media (min-width: $sm) {
+    }
+    
+}
+
+
+/*------------EMPIEZA EL BODY------*/
+
+body{
+    //background-color: lightpink;
+    max-width: 576px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    justify-content: center;
+
+    @media (min-width: $sm) {
+        max-width: 100%;
+        display: block;
+        margin:0 5%;
+    }
+}
+
+.todo{
+    //background-color: lightpink;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (min-width: $sm) {
+        width: 1250px;
+        max-width: 100%;
+    }
+    
+
+}
+
+/*---------------CÓMO FUNCIONA--------------*/
+
+ .comoFunciona{
+    @media (min-width: $sm){
+        //background-color: lightsteelblue;
+    }
+}
+
+.comoFunca{
+    color: $gray-6;
+    margin-top: 0.25em;
+
+    @media (min-width: $sm) {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+}
+
+ul{
+    @media (min-width: $sm){
+        display:flex;
+        //flex-direction: row;
+        //background-color: $gray-1;
+        justify-content: space-between;
+    }
+}
+
+li{
+    @media (min-width: $sm){
+        width: 30%;
+    }
+}
+
+.cardFunciona{
+    display:flex;
+    //justify-content: space-between;
+    margin:2em 0;
+
+    @media (min-width: $sm) {
+        //background-color: lightgreen;
+        flex-direction: column;
+        //justify-content: space-between;
+        width: 100%;
+        margin: 0;
+        height: 100%;
+    }
+}
+
+.numero{
+    //background-color: lightpink;
+    color: white;
+    margin: auto;
+    padding: 0;
+
+    @media (min-width: $sm) {
+    }
+}
+
+.circulo{
+    background: rgb(240,144,0);
+    background: linear-gradient(0deg, $primary-2, rgba(255,206,50,1) 100%);
+    display: flex;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+
+    @media (min-width: $sm) {
+        margin: 0 auto;
+        margin-bottom: 0.25em;
+    }
+}
+
+.textoCard{
+    //background-color: yellow;
+    width: 85%;
+    color: $gray-6;
+    margin-left: 1em;
+
+    @media (min-width: $sm) {
+        //background-color: lightsalmon;
+        text-align: center;
+        margin: 0.5em auto;
+    }
+}
+
+.cardTitulo{
+    color: $gray-6;
+    margin-bottom: 0.25em;
+
+    @media (min-width: $sm) {
+        text-align: center;
+    }
+}
+
+.pCard{
+    color: $gray-5;
+
+    @media (min-width: $sm) {
+        //background-color: $gray-3;
+        align-items: flex-end;
+    }
+}
+
+/*-------------------FORMULARIO----------------*/
+
+.futuroFormulario{
+    @media (min-width: $sm){
+        //background-color: lightgreen;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 4em 0;
+    }
+}
+
+.trueFormulario{
+    //background-color: lightgreen;
+    border: solid 1px $gray-1;
+    border-radius: 5px;
+    padding: 30px;
+
+    @media (min-width: $sm) {
+        width: 40%;
+        //margin-top: 3em;
+    }
+}
+
+.eliminableClicked{
+    display: none;
+}
+
+.validadoClicked{
+    display: block;
+    border: solid 1px $primary-2;
+    background-color: $primary-2;
+    padding: 30px;
+ 
+    @media (min-width: $sm) {
+        width: 40%;
+        //margin-top: 3em;
+    }
+}
+
+.cuadradoValidado{
+    display:none;
+}
+
+.validGracias{
+    color: $white;
+}
+
+.validTexto{
+    color: $white;
+    margin-top: 1em;
+}
+
+
+.mockupSection{
+    display: none;
+
+    @media (min-width: $sm){
+        display: block;
+        width: 40%;
+    }
+}
+
+.demo{
+    color: $gray-6;
+
+    @media (min-width: $sm) {
+    }
+}
+
+.nombre, .horario, .email, .ciudad {
+    //background-color: salmon;
+    color: $gray-5;
+    margin: 1em 0;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $sm) {
+    }
+}
+
+label{
+    display: block;
+    margin: 0.2em 0;
+
+    @media (min-width: $sm) {
+    }
+}
+
+.campoTexto{
+    border: 2px solid $gray-1;
+    border-radius: 5px;
+    background-color: $white;
+    padding: 0.35em 0.5em;
+    outline: none;
+    color: $gray-4;
+    //width:100%;
+
+    @media (min-width: $sm) {
+    }
+}
+
+*::placeholder{
+    color: $gray-2;
+
+    @media (min-width: $sm) {
+    }
+}
+
+select{
+    width: 100%;
+    border: 2px solid $gray-1;
+    background-color: $white;
+    outline: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+
+    @media (min-width: $sm) {
+    }
+}
+
+option{
+    color: $gray-6;
+
+    @media (min-width: $sm) {
+    }
+}
+
+.botonContainer{
+    margin: 1em 0 0;
+
+    @media (min-width: $sm) {
+    }
+}
+
+.boton:visited, .boton{
+    background-color: $primary-2;
+    color: $white;
+    border-radius: 5px;
+    border: 0.05em solid $primary-2;
+    padding: 0.7em 1.7em;
+
+    @media (min-width: $sm) {
+    }
+}
+
+.boton:hover, .boton:active{
+    background-color: $white;
+    color: $primary-2;
+    border-radius: 5px;
+    border: 0.05em solid $primary-2;
+    padding: 0.7em 1.7em;
+
+    @media (min-width: $sm) {
+    }
+}
+
+.terminosContainer{
+    color: $gray-5;
+    display: flex;
+    align-content: flex-start;
+
+    @media (min-width: $sm) {
+    }
+}
+
+.checkboxText{
+    margin-left: 1em;
+
+    @media (min-width: $sm) {
+    }
+}
+
+#checkbox{
+    height: 25px;
+    width: 25px;
+
+    @media (min-width: $sm) {
+    }
+}
+
+/*----------------OPINIONES------------*/
+
+.extra{
+    display:none;
+    
+    @media (min-width: $sm){
+        display:block;
+    }
+}
+
+.opiniones{
+    //background-color: lightgreen;
+    margin: 1em 0;
+
+    @media (min-width: $sm) {
+        margin: 3em 0 2em;
+    }
+}
+
+.opinionesCuadros{
+    @media (min-width: $sm){
+        display:flex;
+        justify-content: space-between;
+    }
+}
+
+.opinionesGuardianes{
+    color: $gray-6;
+    margin: 1em 0 0;
+
+    @media (min-width: $sm) {
+        text-align: center;
+        display: block;
+        margin-bottom: 1em;
+    }
+}
+
+.opinion{
+    margin: 1em 0;
+
+    @media (min-width: $sm) {
+        width: 31%;
+    }
+}
+
+.opinionP{
+    //position: relative;
+    border: 1px solid $gray-1;
+    border-radius: 5px;
+    padding: 1em;
+    color: $gray-4;
+
+    @media (min-width: $sm) {
+    }
+}
+
+.nombreOpinion{
+    color: $gray-5;
+    margin: 0.5em 0 0;
+
+    @media (min-width: $sm) {
+        margin-top: 1em;
+    }
+}
+
+.direccionOpinion{
+    color: $gray-4;
+    margin: 0.25em 0 2em;
+
+    @media (min-width: $sm) {
+    }
+}
+
+/*---Lo de las flechas---*/
+
+.laCaja{
+    position: relative;
+
+    @media (min-width: $sm) {
+    }
+}
+
+.arrow-down-white{
+    bottom: -9px;
+    left: 10px;
+    position: absolute;
+    //margin-left: 1em;
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid $white;
+
+    @media (min-width: $sm) {
+    }
+  }
+
+.arrow-down-gray{
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid $gray-1;
+
+  @media (min-width: $sm) {
+}
+}
+
+
+/*------------LO DEL MAPA------------*/
+
+.guardianesCerca{
+    color: $gray-6;
+    margin: 1em 0 0.5em;
+
+    @media (min-width: $sm) {
+        text-align: center;
+    }
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+    background-color: grey;
+    margin-bottom: 100px;
+
+    @media (min-width: $sm) {
+        height: 500px;
+    }
+  }
